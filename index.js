@@ -12,3 +12,9 @@ function doSomethingAsync(callback) {
     callback();
   }, 1000);
 }
+
+doSomethingAsync(() => {
+  console.log('5. Callback after async function');
+});
+
+console.log('6. End of script');
