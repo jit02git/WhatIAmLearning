@@ -5,3 +5,10 @@ setTimeout(() => {
 }, 0);
 
 console.log('3. Synchronous log');
+
+function doSomethingAsync(callback) {
+  setTimeout(() => {
+    console.log('4. Inside async function');
+    callback();
+  }, 1000);
+}
